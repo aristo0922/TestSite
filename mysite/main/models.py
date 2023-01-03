@@ -10,6 +10,8 @@ class Post(models.Model):
     postname = models.CharField(max_length=50)
     contents = models.TextField()
     # 게시글의 제목(postname)이 Post object 대신하기
+    # 게시글 Post에 이미지 추가
+    mainphoto = models.ImageField(blank=True, null=True)
 
     def __str__(self):
         return self.postname

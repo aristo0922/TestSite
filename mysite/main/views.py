@@ -17,6 +17,7 @@ def blog(request):
     # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옴
     return render(request, 'main/blog.html', {'postlist': postlist})
 
+
 # blog의 게시글(posting)을 부르는 posting 함수
 
 
